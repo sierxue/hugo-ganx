@@ -1,29 +1,10 @@
-# Hugo Lithium
+# Hugo ganx
 
-A simple responsive blog theme for [Hugo](https://gohugo.io/) forked from https://github.com/jrutheiser/hugo-lithium-theme with modifications to make it work better with [**blogdown**](https://github.com/rstudio/blogdown).
-
-The easiest way to get started is to create a new (empty) RStudio project, then
-
-```r
-devtools::install_github('rstudio/blogdown')  # install blogdown
-blogdown::new_site(theme = 'yihui/hugo-lithium-theme')
-```
-
-Then you should be able to see an example website launched in the RStudio Viewer.
-
-For the full documentation, please see this section in the **blogdown** book: https://bookdown.org/yihui/blogdown/themes.html
-
-## Features
-
-- Blog
-- Responsive
-- Disqus
-- Google Analytics
-- Google web fonts (Merriweather and Lato)
-- MathJax
-- highlight.js
+A simple responsive blog theme for [Hugo](https://gohugo.io/) forked from https://github.com/yihui/hugo-lithium-theme, which is froked from  https://github.com/jrutheiser/hugo-lithium-theme.
 
 ## Changes
+
+## Changes by Yihui Xie
 
 The main changes I made to the original hugo-lithium-theme are:
 
@@ -41,4 +22,4 @@ The main changes I made to the original hugo-lithium-theme are:
 
 ## License
 
-The original hugo-lithium-theme was released by Jonathan Rutheiser under [the MIT License](https://github.com/jrutheiser/hugo-lithium-theme/blob/master/LICENSE.md). The modified version in this repository is also released under MIT.
+The original hugo-lithium-theme was released by Jonathan Rutheiser and Yihui Xie under [the MIT License](https://github.com/jrutheiser/hugo-lithium-theme/blob/master/LICENSE.md). The modified version in this repository is also released under MIT.
