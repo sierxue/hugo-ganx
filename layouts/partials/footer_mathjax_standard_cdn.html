@@ -1,10 +1,10 @@
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <script src="{{ "/js/math-code.js" | relURL }}"></script>
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
+  MathJax.Hub.Config({
     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
     menuSettings: {
-    zoom: "Double-Click",        //  when to do MathZoom Double-Click,Hover,Click
+    zoom: "Hover",        //  when to do MathZoom
     CTRL: false,         //    require CTRL for MathZoom?
     ALT: false,          //    require Alt or Option?
     CMD: false,          //    require CMD?
@@ -19,7 +19,7 @@ MathJax.Hub.Config({
   MathZoom: {
     delay: 5000
     }
-});
+  });
 </script>
-<script async src="{{ .Site.Params.MathJaxCDN | default "//cdn.bootcss.com" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "2.7.1" }}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
 {{ end }}
