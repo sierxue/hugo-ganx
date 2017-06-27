@@ -1,0 +1,20 @@
+<h1 class="article-title">{{ .Title }}
+{{ with .Params.subtitle }}
+<span class="article-subtitle">{{ . }}</span>
+{{ end }}
+</h1>
+
+{{ if or (in (split "en,cn" ",") .Section) .Params.author }}
+<div class="article-date">
+  <span>{{ with or (or .Params.author (index .Site.Params.author .Section)) "" }} {{  print . " · " }} {{ end }} {{ .Date.Format "2006/01/02" }} {{ " · " }} {{ with .Section }}
+    <a href="/{{ . }}/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss" aria-hidden="true" title="RSS feed"></i></a>
+    {{ end }}  </span>
+  <span class="article-toolbar">
+  {{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }} {{ " · " }} 
+	{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }} {{ " · " }} {{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+    </span>
+</div>
+{{ end }}
