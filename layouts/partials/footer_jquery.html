@@ -1,5 +1,8 @@
-{{ if and (not .Params.disable_jquery) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
+{{ if and (not .Params.disable_jquery) }}
+
+<script src="{{ .Site.Params.JqueryCDN | default "//cdn.bootcss.com" }}/jquery/{{ .Site.Params.JqueryVersion | default "3.2.1" }}/jquery.min.js"></script>
+
 <script src="{{ "/js/jquery-code.js" | relURL }}"></script>
 
-<script async src="{{ .Site.Params.JqueryCDN | default "//cdn.bootcss.com" }}/jquery/{{ .Site.Params.JqueryVersion | default "3.2.1" }}/jquery.min.js"></script>
 {{ end }}
+
