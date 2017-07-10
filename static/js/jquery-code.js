@@ -1,7 +1,52 @@
 //ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
 //ref: https://stackoverflow.com/questions/41268239/simple-hide-show-divjs-how-to-start-hidden
-function hint() {
-    var x = document.getElementById('hint');
+function answer() {
+    var x = document.getElementById('answer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function hint1() {
+    var x = document.getElementById('hint1');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function hint2() {
+    var x = document.getElementById('hint2');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function hint3() {
+    var x = document.getElementById('hint3');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function hint4() {
+    var x = document.getElementById('hint4');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function hint5() {
+    var x = document.getElementById('hint5');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
