@@ -1,8 +1,9 @@
 {{ if and (not .Params.disable_jquery) }}
 
-<script src="{{ .Site.Params.JqueryCDN | default "//cdn.bootcss.com" }}/jquery/{{ .Site.Params.JqueryVersion | default "3.2.1" }}/jquery.min.js"></script>
+<!-- <script src="{{ .Site.Params.JqueryCDN | default "//cdn.bootcss.com" }}/jquery/{{ .Site.Params.JqueryVersion | default "3.2.1" }}/jquery.min.js"></script> -->
+
+<script src="/js/jquery-3.2.1.min.js"></script>
 
 <script src="{{ "/js/jquery-code.js" | relURL }}"></script>
 
 {{ end }}
-
