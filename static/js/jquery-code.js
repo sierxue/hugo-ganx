@@ -9,6 +9,15 @@ function answer() {
     }
 }
 
+function exer() {
+    var x = document.getElementById('answer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 function hint1() {
     var x = document.getElementById('hint1');
     if (x.style.display === 'none') {
