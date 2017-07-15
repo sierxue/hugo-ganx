@@ -246,6 +246,12 @@ code {
   margin-left: 2px;
 }
 
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
 @media (min-width: 600px) {
   .header {
     padding: 25px 0;
