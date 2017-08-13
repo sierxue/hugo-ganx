@@ -1,49 +1,6 @@
 //ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
 //ref: https://stackoverflow.com/questions/41268239/simple-hide-show-divjs-how-to-start-hidden
-function answer1() {
-    var x = document.getElementById('answer1');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
 
-function answer2() {
-    var x = document.getElementById('answer2');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function answer3() {
-    var x = document.getElementById('answer3');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function answer4() {
-    var x = document.getElementById('answer4');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function answer5() {
-    var x = document.getElementById('answer5');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
 
 function hide1() {
     var x = document.getElementById('hide1');
@@ -128,50 +85,6 @@ function hide9() {
 
 function hide10() {
     var x = document.getElementById('hide10');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function hint1() {
-    var x = document.getElementById('hint1');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function hint2() {
-    var x = document.getElementById('hint2');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function hint3() {
-    var x = document.getElementById('hint3');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function hint4() {
-    var x = document.getElementById('hint4');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
-function hint5() {
-    var x = document.getElementById('hint5');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
