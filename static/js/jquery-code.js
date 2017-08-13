@@ -45,8 +45,8 @@ function answer5() {
     }
 }
 
-function exer1() {
-    var x = document.getElementById('exer1');
+function hide1() {
+    var x = document.getElementById('hide1');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -54,8 +54,8 @@ function exer1() {
     }
 }
 
-function exer2() {
-    var x = document.getElementById('exer2');
+function hide2() {
+    var x = document.getElementById('hide2');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -63,8 +63,8 @@ function exer2() {
     }
 
 }
-function exer3() {
-    var x = document.getElementById('exer3');
+function hide3() {
+    var x = document.getElementById('hide3');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -72,8 +72,8 @@ function exer3() {
     }
 }
 
-function exer4() {
-    var x = document.getElementById('exer4');
+function hide4() {
+    var x = document.getElementById('hide4');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -81,8 +81,8 @@ function exer4() {
     }
 }
 
-function exer5() {
-    var x = document.getElementById('exer5');
+function hide5() {
+    var x = document.getElementById('hide5');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -90,8 +90,8 @@ function exer5() {
     }
 }
 
-function exer6() {
-    var x = document.getElementById('exer6');
+function hide6() {
+    var x = document.getElementById('hide6');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -99,8 +99,8 @@ function exer6() {
     }
 }
 
-function exer7() {
-    var x = document.getElementById('exer7');
+function hide7() {
+    var x = document.getElementById('hide7');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -108,8 +108,8 @@ function exer7() {
     }
 }
 
-function exer8() {
-    var x = document.getElementById('exer8');
+function hide8() {
+    var x = document.getElementById('hide8');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -117,8 +117,8 @@ function exer8() {
     }
 }
 
-function exer9() {
-    var x = document.getElementById('exer9');
+function hide9() {
+    var x = document.getElementById('hide9');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -126,8 +126,8 @@ function exer9() {
     }
 }
 
-function exer10() {
-    var x = document.getElementById('exer10');
+function hide10() {
+    var x = document.getElementById('hide10');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
