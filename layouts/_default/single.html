@@ -5,7 +5,16 @@
   <article class="article">
 
     <h1 class="article-title">{{ .Title }}</h1>
-
+    {{ if eq .Section "psp" }}
+      <div class="article-date">
+    		<span>
+    			{{ .Params.author }} {{ " · " }}
+    			{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
+    			{{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
+    			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}/index.xml" type="application/rss+xml" target="_blank">订阅</a> {{ end }}
+    		</span>
+  	  </div>
+    {{ end }}
     {{ if eq .Section "ml" }}
       <div class="article-date">
     		<span>
