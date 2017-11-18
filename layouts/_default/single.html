@@ -9,6 +9,7 @@
       <div class="article-date">
     		<span>
     			{{ .Params.author }} {{ " · " }}
+    			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}/index.xml" type="application/rss+xml" target="_blank">订阅</a> {{ end }}
@@ -19,6 +20,7 @@
       <div class="article-date">
     		<span>
     			{{ .Params.author }} {{ " · " }}
+    			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}/index.xml" type="application/rss+xml" target="_blank">订阅</a> {{ end }}
@@ -29,6 +31,7 @@
       <div class="article-date">
     		<span>
     			{{ .Params.author }} {{ " · " }}
+    			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}/index.xml" type="application/rss+xml" target="_blank">订阅</a> {{ end }}
@@ -39,6 +42,7 @@
       <div class="article-date">
     		<span>
     			{{ .Params.author }} {{ " · " }}
+    			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}/index.xml" type="application/rss+xml" target="_blank">订阅</a> {{ end }}
@@ -50,6 +54,7 @@
     		<span>
     			{{ .Params.author }} {{ " · " }}
     			{{ .Date.Format "2006/01/02" }} {{ " · " }}
+    			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.categories }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.tags }} <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} {{ " · " }}
     			{{ range .Params.series }} <a href="{{ "/series/" | relLangURL }}{{ . | urlize }}/index.xml" type="application/rss+xml" target="_blank">订阅</a> {{ end }}

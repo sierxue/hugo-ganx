@@ -4,7 +4,7 @@
 {{ end }}
 </h1>
 
-{{ if or (in (split "blog,math,ml" ",") .Section) .Params.author }}
+{{ if or (in (split "blog,math,ml,psp,pac" ",") .Section) .Params.author }}
 <div class="article-date">
   <span>{{ with or (or .Params.author (index .Site.Params.author .Section)) "" }} {{  print . " · " }} {{ end }} {{ .Date.Format "2006/01/02" }} {{ " · " }} {{ with .Section }}
     <a href="/{{ . }}/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss" aria-hidden="true" title="RSS feed"></i></a>
