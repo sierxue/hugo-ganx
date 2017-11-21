@@ -14,21 +14,21 @@
   {{ else }}
   <div class="archive">
 	{{ if eq .Section "pac" }}
-	  {{ range .Data.Pages }}
+	  {{ range .Data.Pages.ByTitle.Reverse }}
 		<article class="archive-item">
 		<a href="{{ .Permalink }}" class="archive-item-link">{{ .Title }}</a>
 		</article>
 	  {{ end }}
 	{{ end }}
 	{{ if eq .Section "psp" }}
-	  {{ range .Data.Pages }}
+	  {{ range .Data.Pages.ByTitle.Reverse }}
 		<article class="archive-item">
 		<a href="{{ .Permalink }}" class="archive-item-link">{{ .Title }}</a>
 		</article>
 	  {{ end }}
 	{{ end }}
 	{{ if eq .Section "ml" }}
-	  {{ range .Data.Pages }}
+	  {{ range .Data.Pages.ByTitle.Reverse }}
 		<article class="archive-item">
 		<a href="{{ .Permalink }}" class="archive-item-link">{{ .Title }}</a>
 		</article>
