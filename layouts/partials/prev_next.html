@@ -1,4 +1,4 @@
-{{ if in (split "post,ml,math" ",") .Section }}
+{{ if in (split "post,ml,math,psp,pac" ",") .Section }}
 {{ if or .PrevInSection .NextInSection }}
 <nav id="article-nav">
     {{ if .PrevInSection }}
