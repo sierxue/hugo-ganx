@@ -1,13 +1,25 @@
 <article class="post">
   <header>
     <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
-    <div class="post-meta">{{ .Date.Format "2006/01/02" }} - 约{{ .FuzzyWordCount }} 字 </div>
+    <!-- {{ if eq .Section "psp" }}
+	    <div class="post-meta">本文大约{{ .FuzzyWordCount }} 字 </div>
+	{{ end }} -->
+    {{ if eq .Section "ml" }}
+	    <div class="post-meta">本文大约{{ .FuzzyWordCount }} 字 </div>
+	{{ end }}
+    {{ if eq .Section "blog" }}
+	    <div class="post-meta">{{ .Date.Format "2006/01/02" }} - 本文大约{{ .FuzzyWordCount }} 字 </div>
+	{{ end }}
+    {{ if eq .Section "math" }}
+	    <div class="post-meta">{{ .Date.Format "2006/01/02" }} - 本文大约{{ .FuzzyWordCount }} 字 </div>
+	{{ end }}
+    <!-- <div class="post-meta">{{ .Date.Format "2006/01/02" }} - 约{{ .FuzzyWordCount }} 字 </div> -->
   </header>
 
   {{ if .Description }} {{ .Description }} {{ else }} {{ .Summary | plainify | safeHTML }} {{ end }}
   <footer>
     <a href='{{ .Permalink }}'>
-      <nobr> 继续阅读 →</nobr>
+      <nobr> <br /> 继续阅读 →</nobr>
     </a>
 	{{ partial "footer_mathjax" . }}
   </footer>
